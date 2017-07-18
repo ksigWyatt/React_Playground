@@ -2,8 +2,9 @@
   text-align: center;
 }
 
+/* Change the peed of the image rotation below */
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 0.21s linear;
   height: 80px;
 }
 
