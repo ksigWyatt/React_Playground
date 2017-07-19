@@ -18,7 +18,7 @@ class App extends Component {
         {
           title: 'Ecommerce Website',
           category: 'Web Development'
-        },
+        }
       ]
     }
   }
