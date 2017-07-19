@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import Projects from './Components/Projects'
+import Projects from './Components/Projects';
+import AddProject from './Components/AddProject';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      projects: [
+      projects: []
+    }
+  }
+
+  componentWillMount(){
+    this.setState({projects: [
         {
           title: 'Bisiness Website',
           category: 'Web Design'
@@ -20,13 +26,13 @@ class App extends Component {
           category: 'Web Development'
         }
       ]
-    }
+    });
   }
 
   render() {
     return (
       <div className="App">
-          My App
+          <AddProject />
           <Projects projects={this.state.projects}/>
       </div>
     );
