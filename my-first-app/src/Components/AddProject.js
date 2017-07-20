@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 
 class AddProject extends Component {
     constructor() {
@@ -21,6 +22,7 @@ class AddProject extends Component {
         else {
             //do anything else here
             this.setState({newProject: {
+                id: uuid.v4(),
                 title: this.refs.title.value,
                 category: this.refs.category.value
             }}, function() {
@@ -57,4 +59,5 @@ class AddProject extends Component {
     );
   }
 }
+
 export default AddProject;
