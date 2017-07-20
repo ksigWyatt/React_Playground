@@ -50,11 +50,11 @@ class AddProject extends Component {
                     {categoryOptions}
                 </select>
             </div>
+            <br />
             <button type="sumbit" value="Submit" />
         </form>
       </div>
     );
   }
 }
-
 export default AddProject;

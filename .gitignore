@@ -59,3 +59,5 @@ typings/
 
 # React files
 my-first-app/*.md
+*.svg
+*.png
