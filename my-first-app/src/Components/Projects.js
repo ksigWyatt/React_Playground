@@ -13,7 +13,6 @@ class Projects extends Component {
     //Fixed this - came from using projectItems above
     if (this.props.projects) {
       projectItems = this.props.projects.map(project => {
-          //console.log(project);
           return(
             <ProjectItem onDelete={this.deleteProject.bind(this)} key={project.title} project={project} />
           );
