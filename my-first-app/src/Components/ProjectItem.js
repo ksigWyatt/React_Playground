@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class ProjectItem extends Component {
   deleteProject(id) {
-    this.props.onDelete();
+    console.log(id);
+    this.props.onDelete(id); // passing ID to props so that the one you click is the one deleted
   }
 
 
