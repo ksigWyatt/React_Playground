@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +9,7 @@ class App extends Component {
         <tbody>
           <tr>
             <td>
-              <img width="50" src="film-strip.svg"/>
+              <img alt="App Icon" width="50" src="film-strip.svg"/>
             </td>
             <td width="8">
             </td>
@@ -20,8 +19,6 @@ class App extends Component {
           </tr>
         </tbody>
       </table>
-
-
       </div>
     );
   }
